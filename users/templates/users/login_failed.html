@@ -1,0 +1,6 @@
+{% extends "products/base.html" %}
+{% block content %}
+<div class="alert alert-warning">
+    You have been blocked from the system for {{cooloff_timedelta}} minutes after {{failure_limit}} failed attempts
+</div>
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends "products/base.html" %}
+{% block content %}
+    {% for prodect in products%}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="prodect-metadata">
+                <a class="mr-2" href="#">{{ prodect.name }}</a>
+                <small class="text-muted">{{ prodect.cost }}</small>
+            </div>
+            <h2><a class="prodect-title" href="#">{{ prodect.title }}</a></h2>
+            <p class="prodect-content">{{ prodect.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
